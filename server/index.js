@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000
 app.use(express.json())
 app.use(cors())
 
-
+cosole.log('hgllo')
 
 app.use(router.userRouter)
 app.use(errorHandler.error)
