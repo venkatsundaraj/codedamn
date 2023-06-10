@@ -27,7 +27,7 @@ const Register = function(){
 
     const formSubmitHandler = async function(e){
         e.preventDefault()
-        const user = await fetch('http://localhost:1337/api/register',{
+        const user = await fetch('https://mern-traversy-venkat.onrender.com/api/register',{
             method:'POST', 
             headers:{
                 'Content-Type':'application/json'

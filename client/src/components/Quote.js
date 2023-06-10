@@ -14,7 +14,7 @@ const Dashboard = function(){
 
     const formSubmitHandler = async function(e){
         e.preventDefault()
-        const user = await fetch('http://localhost:1337/api/quote',{
+        const user = await fetch('https://mern-traversy-venkat.onrender.com/api/quote',{
             method:'POST',
             headers:{
                 'Content-type':'application/json',
@@ -33,7 +33,7 @@ const Dashboard = function(){
     }
 
     const populatState = async function(){
-        const data = await fetch('http://localhost:1337/api/quote',{
+        const data = await fetch('https://mern-traversy-venkat.onrender.com/api/quote',{
             headers: {
                 'x-access-token':localStorage.getItem('token')
             }   
