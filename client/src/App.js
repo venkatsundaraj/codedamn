@@ -4,6 +4,7 @@ import Register from './components/Register';
 import React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Login from './components/Login';
+import Home from './components/Home';
 import Dashboard from './components/Quote';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       
     <BrowserRouter>
           <Routes>
+            <Route exact path='/' element={<Home/>}/>
             <Route exact path='/register' element={<Register/>}/>
             <Route exact path='/login' element={<Login/>}/>
             <Route exact path='/quote' element={<Dashboard/>}/>
